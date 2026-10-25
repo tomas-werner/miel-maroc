@@ -1,0 +1,509 @@
+{
+  "common": {
+    "search": "Rechercher",
+    "searchPlaceholder": "Rechercher des produits...",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "noResults": "Aucun résultat trouvé",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "add": "Ajouter",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "submit": "Valider",
+    "close": "Fermer",
+    "yes": "Oui",
+    "no": "Non",
+    "or": "ou",
+    "and": "et",
+    "currency": "MAD",
+    "language": "Langue"
+  },
+  "nav": {
+    "home": "Accueil",
+    "catalog": "Catalogue",
+    "cart": "Panier",
+    "account": "Mon compte",
+    "login": "Connexion",
+    "register": "Inscription",
+    "logout": "Déconnexion",
+    "admin": "Administration",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "about": "À propos"
+  },
+  "home": {
+    "welcome": "Bienvenue sur notre boutique",
+    "featuredProducts": "Produits mis en avant",
+    "newArrivals": "Nouveautés",
+    "categories": "Nos catégories",
+    "shopNow": "Acheter maintenant",
+    "viewAll": "Voir tout"
+  },
+  "product": {
+    "inStock": "En stock",
+    "outOfStock": "Rupture de stock",
+    "lowStock": "Stock limité",
+    "addToCart": "Ajouter au panier",
+    "variant": "Variant",
+    "quantity": "Quantité",
+    "description": "Description",
+    "specifications": "Spécifications",
+    "reviews": "Avis clients",
+    "relatedProducts": "Produits similaires",
+    "share": "Partager",
+    "copyLink": "Copier le lien"
+  },
+  "catalog": {
+    "title": "Catalogue",
+    "filters": "Filtres",
+    "sortBy": "Trier par",
+    "sortOptions": {
+      "relevance": "Pertinence",
+      "newest": "Nouveautés",
+      "priceAsc": "Prix croissant",
+      "priceDesc": "Prix décroissant"
+    },
+    "filterBy": "Filtrer par",
+    "priceRange": "Fourchette de prix",
+    "availability": "Disponibilité",
+    "inStockOnly": "En stock uniquement",
+    "clearFilters": "Effacer les filtres",
+    "results": "résultats",
+    "showing": "Affichage"
+  },
+  "cart": {
+    "title": "Mon panier",
+    "empty": "Votre panier est vide",
+    "continueShopping": "Continuer mes achats",
+    "subtotal": "Sous-total",
+    "discount": "Remise",
+    "shipping": "Livraison",
+    "total": "Total",
+    "checkout": "Passer la commande",
+    "remove": "Retirer",
+    "updateQuantity": "Mettre à jour la quantité",
+    "itemAdded": "Produit ajouté au panier",
+    "itemRemoved": "Produit retiré du panier"
+  },
+  "checkout": {
+    "title": "Commande",
+    "guestCheckout": "Commande en tant qu'invité",
+    "createAccount": "Créer un compte",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "shippingAddress": "Adresse de livraison",
+    "billingAddress": "Adresse de facturation",
+    "sameAsShipping": "Identique à l'adresse de livraison",
+    "shippingMethod": "Mode de livraison",
+    "paymentMethod": "Mode de paiement",
+    "orderSummary": "Récapitulatif de commande",
+    "placeOrder": "Confirmer la commande",
+    "terms": "J'accepte les conditions générales de vente"
+  },
+  "account": {
+    "title": "Mon compte",
+    "profile": "Profil",
+    "orders": "Mes commandes",
+    "addresses": "Mes adresses",
+    "favorites": "Mes favoris",
+    "orderHistory": "Historique des commandes",
+    "orderDetails": "Détails de la commande",
+    "orderNumber": "Commande n°",
+    "orderDate": "Date",
+    "orderStatus": "Statut",
+    "orderTotal": "Total",
+    "viewDetails": "Voir les détails",
+    "trackOrder": "Suivre ma commande"
+  },
+  "admin": {
+    "dashboard": "Tableau de bord",
+    "products": "Produits",
+    "categories": "Catégories",
+    "orders": "Commandes",
+    "customers": "Clients",
+    "inventory": "Stock",
+    "shipping": "Livraison",
+    "promotions": "Promotions",
+    "content": "Contenus",
+    "settings": "Paramètres",
+    "users": "Utilisateurs",
+    "audit": "Journal d'audit",
+    "totalOrders": "Total commandes",
+    "totalRevenue": "Chiffre d'affaires",
+    "averageOrder": "Panier moyen",
+    "conversionRate": "Taux de conversion"
+  },
+  "order": {
+    "status": {
+      "pendingPayment": "Paiement en attente",
+      "paid": "Payée",
+      "processing": "En préparation",
+      "shipped": "Expédiée",
+      "delivered": "Livrée",
+      "cancelled": "Annulée",
+      "refundPending": "Remboursement en cours",
+      "refunded": "Remboursée",
+      "paymentFailed": "Paiement échoué"
+    },
+    "shippingStatus": {
+      "pending": "En attente",
+      "processing": "En préparation",
+      "shipped": "Expédiée",
+      "delivered": "Livrée",
+      "failed": "Échouée",
+      "returned": "Retournée"
+    }
+  },
+  "pages": {
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Nous sommes là pour vous aider",
+      "name": "Nom",
+      "email": "E-mail",
+      "message": "Message",
+      "send": "Envoyer",
+      "subject": "Sujet",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "hours": "Horaires d'ouverture",
+      "hoursValue": "Lun - Ven: 9h00 - 18h00",
+      "emailLabel": "E-mail",
+      "phoneLabel": "Téléphone",
+      "addressLabel": "Adresse",
+      "mapPlaceholder": "Carte",
+      "formTitle": "Envoyez-nous un message",
+      "formDescription": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
+      "successMessage": "Votre message a été envoyé avec succès !",
+      "errorMessage": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Questions fréquentes",
+      "q1": "Comment passer une commande ?",
+      "a1": "Pour passer une commande, parcourez notre catalogue, ajoutez les produits souhaités à votre panier, puis procédez au paiement en suivant les instructions à l'écran.",
+      "q2": "Quels sont les modes de paiement acceptés ?",
+      "a2": "Nous acceptons les paiements par carte bancaire, PayPal, et paiement à la livraison.",
+      "q3": "Combien de temps prend la livraison ?",
+      "a3": "Les délais de livraison varient selon votre zone géographique. En général, la livraison prend entre 2 à 5 jours ouvrés.",
+      "q4": "Puis-je annuler ma commande ?",
+      "a4": "Oui, vous pouvez annuler votre commande tant qu'elle n'a pas été expédiée. Contactez-nous dès que possible pour toute annulation.",
+      "q5": "Comment suivre ma commande ?",
+      "a5": "Vous recevrez un e-mail de confirmation avec un numéro de suivi une fois votre commande expédiée. Vous pouvez également suivre votre commande depuis votre compte.",
+      "q6": "Les produits sont-ils garantis ?",
+      "a6": "Oui, tous nos produits sont garantis conformément à la législation en vigueur. Pour plus d'informations, consultez nos conditions générales de vente.",
+      "q7": "Comment créer un compte ?",
+      "a7": "Cliquez sur le bouton 'Inscription' en haut de la page, remplissez le formulaire avec vos informations, et validez votre compte via l'e-mail de confirmation.",
+      "q8": "Puis-je modifier mon adresse de livraison ?",
+      "a8": "Oui, vous pouvez modifier votre adresse de livraison depuis votre compte ou lors du processus de paiement avant de confirmer votre commande."
+    },
+    "shipping": {
+      "title": "Livraison",
+      "subtitle": "Informations sur la livraison",
+      "zonesTitle": "Zones de livraison",
+      "zones": {
+        "casablanca": {
+          "name": "Casablanca",
+          "deliveryTime": "1-2 jours ouvrés",
+          "cost": "Gratuit à partir de 200 MAD"
+        },
+        "rabat": {
+          "name": "Rabat / Salé",
+          "deliveryTime": "1-2 jours ouvrés",
+          "cost": "Gratuit à partir de 200 MAD"
+        },
+        "majorCities": {
+          "name": "Villes principales (Marrakech, Fès, Tanger, Agadir, etc.)",
+          "deliveryTime": "2-3 jours ouvrés",
+          "cost": "Gratuit à partir de 300 MAD"
+        },
+        "otherCities": {
+          "name": "Autres villes",
+          "deliveryTime": "3-5 jours ouvrés",
+          "cost": "Gratuit à partir de 400 MAD"
+        },
+        "rural": {
+          "name": "Zones rurales",
+          "deliveryTime": "5-7 jours ouvrés",
+          "cost": "Frais supplémentaires applicables"
+        }
+      },
+      "deliveryTimesTitle": "Délais de livraison",
+      "deliveryTimes": "Les délais de livraison sont indiqués pour chaque zone et sont calculés à partir de la validation de votre commande. Ces délais sont donnés à titre indicatif et peuvent varier en cas de force majeure.",
+      "shippingCostsTitle": "Frais de livraison",
+      "shippingCosts": "Les frais de livraison sont calculés automatiquement en fonction de votre adresse et du poids de votre commande. La livraison est gratuite à partir d'un certain montant selon votre zone géographique.",
+      "trackingTitle": "Suivi de commande",
+      "tracking": "Vous recevrez un numéro de suivi par e-mail dès l'expédition de votre commande. Vous pouvez suivre l'avancement de votre livraison à tout moment depuis votre compte.",
+      "specialInstructionsTitle": "Instructions spéciales",
+      "specialInstructions": "Si vous avez des instructions spéciales pour la livraison (code d'accès, interphone, etc.), veuillez les indiquer dans les commentaires de votre commande."
+    },
+    "returns": {
+      "title": "Retours et remboursements",
+      "subtitle": "Politique de retour",
+      "policyTitle": "Politique de retour",
+      "policy": "Vous disposez d'un délai de 14 jours à compter de la réception de votre commande pour retourner tout produit qui ne vous convient pas. Les produits doivent être retournés dans leur état d'origine, non utilisés, avec tous les étiquettes et emballages d'origine.",
+      "conditionsTitle": "Conditions de retour",
+      "conditions": [
+        "Le produit doit être dans son état d'origine",
+        "Les étiquettes et emballages doivent être intacts",
+        "Le produit ne doit pas avoir été utilisé",
+        "La demande de retour doit être faite dans les 14 jours suivant la réception"
+      ],
+      "processTitle": "Processus de retour",
+      "process": [
+        "Contactez notre service client pour déclarer votre retour",
+        "Recevez l'autorisation de retour et le numéro de suivi",
+        "Emballez le produit soigneusement dans son emballage d'origine",
+        "Envoyez le colis à l'adresse indiquée",
+        "Attendez la réception et la vérification du produit"
+      ],
+      "refundTitle": "Remboursement",
+      "refund": "Une fois votre retour reçu et vérifié, nous procéderons au remboursement dans un délai de 14 jours. Le remboursement sera effectué sur le même moyen de paiement utilisé pour la commande. Les frais de livraison ne sont pas remboursés sauf en cas de produit défectueux.",
+      "exchangesTitle": "Échanges",
+      "exchanges": "Les échanges sont possibles pour des produits de même valeur ou supérieure. Dans le cas d'un échange pour un produit de valeur supérieure, la différence sera à votre charge.",
+      "defectiveTitle": "Produits défectueux",
+      "defective": "Si vous recevez un produit défectueux ou endommagé, contactez-nous dans les 48 heures suivant la réception. Nous nous engageons à remplacer le produit ou à vous rembourser intégralement."
+    },
+    "terms": {
+      "title": "Conditions générales de vente",
+      "intro": "Les présentes conditions générales de vente régissent les relations contractuelles entre Miel Boutique et ses clients. En passant commande sur notre site, vous acceptez ces conditions.",
+      "articles": {
+        "1": {
+          "title": "Objet",
+          "content": "Les présentes conditions ont pour objet de définir les relations contractuelles entre Miel Boutique et le client, et de définir les conditions d'achat et de vente des produits proposés sur le site."
+        },
+        "2": {
+          "title": "Produits",
+          "content": "Les produits proposés sont ceux figurant sur le site au jour de la consultation. Miel Boutique se réserve le droit de modifier à tout moment l'assortiment de produits. Chaque produit est accompagné d'une description établie avec la plus grande exactitude possible."
+        },
+        "3": {
+          "title": "Prix",
+          "content": "Les prix des produits sont indiqués en Dirhams Marocains (MAD) TTC. Miel Boutique se réserve le droit de modifier ses prix à tout moment. Toutefois, le produit sera facturé sur la base du tarif en vigueur au moment de la validation de la commande."
+        },
+        "4": {
+          "title": "Commande",
+          "content": "Le client peut passer commande sur le site. La commande est réputée acceptée lorsque le paiement est validé. Une confirmation de commande sera envoyée par e-mail."
+        },
+        "5": {
+          "title": "Paiement",
+          "content": "Le paiement est exigible immédiatement à la commande. Le client peut payer par carte bancaire, PayPal ou paiement à la livraison. Le paiement est sécurisé et crypté."
+        },
+        "6": {
+          "title": "Livraison",
+          "content": "Les produits sont livrés à l'adresse indiquée par le client lors de la commande. Les délais de livraison sont indiqués pour chaque zone géographique. Le transfert de risque s'opère dès la remise du produit au transporteur."
+        },
+        "7": {
+          "title": "Rétractation",
+          "content": "Conformément à la législation en vigueur, le client dispose d'un délai de 14 jours pour exercer son droit de rétractation sans avoir à justifier de motifs ni à payer de pénalités."
+        },
+        "8": {
+          "title": "Garantie",
+          "content": "Les produits sont garantis conformément à la législation marocaine. Les défauts de conformité doivent être signalés dans un délai de 30 jours suivant la livraison."
+        },
+        "9": {
+          "title": "Données personnelles",
+          "content": "Les informations collectées sont nécessaires au traitement de la commande et sont protégées conformément à la législation sur la protection des données personnelles."
+        },
+        "10": {
+          "title": "Propriété intellectuelle",
+          "content": "Tous les éléments du site (textes, images, vidéos) sont la propriété de Miel Boutique ou de ses partenaires. Toute reproduction est interdite sans autorisation préalable."
+        }
+      }
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "Miel Boutique s'engage à protéger vos données personnelles. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.",
+      "collectionTitle": "Collecte des données",
+      "collection": "Nous collectons les informations que vous nous fournissez directement (nom, adresse, e-mail, téléphone) ainsi que les données techniques liées à votre navigation (adresse IP, type de navigateur, cookies).",
+      "usageTitle": "Utilisation des données",
+      "usage": "Vos données sont utilisées pour : traiter vos commandes, améliorer nos services, vous envoyer des communications marketing (avec votre consentement), et assurer la sécurité du site.",
+      "sharingTitle": "Partage des données",
+      "sharing": "Nous ne partageons vos données personnelles qu'avec les tiers nécessaires au traitement de votre commande (transporteurs, prestataires de paiement). Nous ne vendons pas vos données à des tiers.",
+      "securityTitle": "Sécurité des données",
+      "security": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles pour protéger vos données contre l'accès non autorisé, la modification ou la destruction.",
+      "cookiesTitle": "Cookies",
+      "cookies": "Notre site utilise des cookies pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser les cookies ou être averti lorsqu'un cookie est déposé.",
+      "rightsTitle": "Vos droits",
+      "rights": "Conformément à la législation, vous disposez des droits suivants : droit d'accès, de rectification, de suppression, d'opposition, et de portabilité de vos données. Pour exercer ces droits, contactez-nous à l'adresse indiquée dans les mentions légales.",
+      "retentionTitle": "Conservation des données",
+      "retention": "Vos données sont conservées pendant la durée nécessaire à l'accomplissement des finalités pour lesquelles elles ont été collectées, conformément aux obligations légales."
+    },
+    "cookies": {
+      "title": "Cookies"
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "publisherTitle": "Éditeur du site",
+      "publisher": {
+        "name": "Miel Boutique",
+        "form": "SARL",
+        "capital": "Capital social : 100 000 MAD",
+        "address": "Adresse : 123 Rue du Commerce, Casablanca, Maroc",
+        "phone": "Téléphone : +212 5XX XXX XXX",
+        "email": "E-mail : contact@mielboutique.ma",
+        "rc": "RC : Casablanca XXXXX",
+        "ice": "ICE : XXXXXXXXXXXXX",
+        "tax": "IF : XXXXXXXX"
+      },
+      "hostingTitle": "Hébergement",
+      "hosting": {
+        "provider": "Fournisseur d'hébergement : [Nom de l'hébergeur]",
+        "address": "Adresse : [Adresse de l'hébergeur]"
+      },
+      "directorTitle": "Directeur de la publication",
+      "director": "Directeur de la publication : [Nom du directeur]",
+      "intellectualPropertyTitle": "Propriété intellectuelle",
+      "intellectualProperty": "L'ensemble du contenu de ce site (textes, images, vidéos, logos) est protégé par le droit d'auteur. Toute reproduction, même partielle, est interdite sans autorisation préalable.",
+      "personalDataTitle": "Protection des données personnelles",
+      "personalData": "Les données personnelles collectées sur ce site sont traitées conformément à la loi n° 09-08 relative à la protection des personnes physiques dans le traitement des données à caractère personnel.",
+      "consumerLawTitle": "Droit de la consommation",
+      "consumerLaw": "Conformément à la loi n° 31-08 édictant des mesures de protection du consommateur, vous disposez d'un délai de rétractation de 14 jours à compter de la réception de votre commande."
+    },
+    "about": {
+      "title": "À propos",
+      "subtitle": "En savoir plus sur nous",
+      "storyTitle": "Notre histoire",
+      "story": "Fondée en 2020, Miel Boutique est née de la passion pour les produits de qualité et le désir d'offrir aux Marocains une expérience d'achat en ligne exceptionnelle. Au fil des années, nous nous sommes développés pour devenir une référence dans le e-commerce au Maroc.",
+      "missionTitle": "Notre mission",
+      "mission": "Notre mission est de rendre l'achat en ligne simple, sûr et agréable pour tous les Marocains. Nous nous engageons à offrir des produits de qualité, un service client irréprochable et une expérience utilisateur optimale.",
+      "valuesTitle": "Nos valeurs",
+      "values": [
+        {
+          "name": "Qualité",
+          "description": "Nous sélectionnons rigoureusement nos produits pour garantir leur qualité et leur authenticité."
+        },
+        {
+          "name": "Transparence",
+          "description": "Nous communiquons ouvertement sur nos produits, nos prix et nos pratiques."
+        },
+        {
+          "name": "Service client",
+          "description": "Notre équipe est dédiée à vous offrir la meilleure expérience possible."
+        },
+        {
+          "name": "Innovation",
+          "description": "Nous nous efforçons constamment d'améliorer nos services et d'adopter les meilleures technologies."
+        }
+      ],
+      "teamTitle": "Notre équipe",
+      "team": "Notre équipe est composée de professionnels passionnés, engagés à vous offrir le meilleur service. Chaque membre apporte son expertise pour faire de Miel Boutique une entreprise à succès.",
+      "commitmentTitle": "Notre engagement",
+      "commitment": "Nous nous engageons à respecter les normes les plus élevées en matière de qualité, de sécurité et de service client. Votre satisfaction est notre priorité absolue."
+    }
+  },
+  "moderator": {
+    "dashboard": "Tableau de bord modérateur",
+    "overview": "Vue d'ensemble",
+    "quickActions": "Actions rapides",
+    "recentChanges": "Modifications récentes",
+    "addProduct": "Ajouter un produit",
+    "addCategory": "Ajouter une catégorie",
+    "addBanner": "Ajouter une bannière",
+    "totalProducts": "Total produits",
+    "totalCategories": "Total catégories",
+    "activeBanners": "Bannières actives",
+    "recentProducts": "Produits récents",
+    "products": "Produits",
+    "categories": "Catégories",
+    "content": "Contenu",
+    "banners": "Bannières",
+    "homepage": "Page d'accueil",
+    "createProduct": "Créer un produit",
+    "editProduct": "Modifier le produit",
+    "createCategory": "Créer une catégorie",
+    "editCategory": "Modifier la catégorie",
+    "manageBanners": "Gérer les bannières",
+    "editHomepage": "Modifier l'accueil",
+    "productForm": {
+      "nameFr": "Nom (Français)",
+      "nameAr": "Nom (Arabe)",
+      "descriptionFr": "Description (Français)",
+      "descriptionAr": "Description (Arabe)",
+      "category": "Catégorie",
+      "brand": "Marque",
+      "basePrice": "Prix de base",
+      "currency": "Devise",
+      "status": "Statut",
+      "isFeatured": "Produit mis en avant",
+      "variants": "Variantes",
+      "addVariant": "Ajouter une variante",
+      "sku": "SKU",
+      "attributes": "Attributs",
+      "priceOverride": "Prix de remplacement",
+      "isActive": "Actif",
+      "stock": "Stock",
+      "preview": "Aperçu",
+      "save": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "categoryForm": {
+      "nameFr": "Nom (Français)",
+      "nameAr": "Nom (Arabe)",
+      "descriptionFr": "Description (Français)",
+      "descriptionAr": "Description (Arabe)",
+      "parentCategory": "Catégorie parente",
+      "sortOrder": "Ordre de tri",
+      "isActive": "Actif",
+      "save": "Enregistrer",
+      "cancel": "Annuler"
+    },
+    "bannerForm": {
+      "titleFr": "Titre (Français)",
+      "titleAr": "Titre (Arabe)",
+      "bodyFr": "Contenu (Français)",
+      "bodyAr": "Contenu (Arabe)",
+      "image": "Image",
+      "targetUrl": "URL cible",
+      "startDate": "Date de début",
+      "endDate": "Date de fin",
+      "sortOrder": "Ordre d'affichage",
+      "isActive": "Actif",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "uploadImage": "Télécharger une image"
+    },
+    "homepageEditor": {
+      "sections": "Sections",
+      "addSection": "Ajouter une section",
+      "featuredProducts": "Produits mis en avant",
+      "collections": "Collections",
+      "textContent": "Contenu texte",
+      "editSection": "Modifier la section",
+      "deleteSection": "Supprimer la section",
+      "reorderSections": "Réorganiser les sections",
+      "saveOrder": "Enregistrer l'ordre"
+    },
+    "status": {
+      "draft": "Brouillon",
+      "published": "Publié",
+      "archived": "Archivé"
+    }
+  },
+  "auth": {
+    "login": "Connexion",
+    "register": "Inscription",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Téléphone",
+    "forgotPassword": "Mot de passe oublié ?",
+    "resetPassword": "Réinitialiser le mot de passe",
+    "rememberMe": "Se souvenir de moi",
+    "noAccount": "Pas de compte ?",
+    "hasAccount": "Déjà un compte ?",
+    "registerSuccess": "Compte créé avec succès",
+    "loginSuccess": "Connexion réussie",
+    "invalidCredentials": "Identifiants invalides"
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "email": "E-mail invalide",
+    "minLength": "Minimum {min} caractères",
+    "maxLength": "Maximum {max} caractères",
+    "passwordMismatch": "Les mots de passe ne correspondent pas"
+  }
+}
