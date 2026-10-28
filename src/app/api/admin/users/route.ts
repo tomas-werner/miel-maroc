@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
       data: {
         email,
         passwordHash,
-        role: role || 'admin',
+        role: role === 'MODERATOR' ? 'MODERATOR' : 'ADMIN',
       }
     });
 
