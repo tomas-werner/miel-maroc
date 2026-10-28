@@ -32,12 +32,15 @@ export default function ModeratorLoginPage({ params }: ModeratorLoginPageProps) 
       });
 
       if (result?.error) {
+        console.error('Auth error:', result.error);
         setError(locale === 'fr' ? 'Identifiants invalides' : 'بيانات الدخول غير صحيحة');
       } else {
         // Check if user is moderator or admin
         if (result?.ok) {
           router.push('/moderateur');
           router.refresh();
+        } else {
+          setError(locale === 'fr' ? 'Identifiants invalides' : 'بيانات الدخول غير صحيحة');
         }
       }
     } catch (err) {
