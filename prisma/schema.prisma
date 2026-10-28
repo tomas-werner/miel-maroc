@@ -503,3 +503,37 @@ enum ModerationStatus {
   APPROVED
   REJECTED
 }
+
+// ============================================================================
+// THEME CUSTOMIZER & SECTIONS (SHOPIFY STYLE)
+// ============================================================================
+
+model SiteSection {
+  id          String   @id @default(cuid())
+  page        String   @default("home") // "home", "about", "header", etc.
+  key         String   @unique          // ex: "hero-banner", "featured-products", "trust-badges"
+  title       String                    // Titre interne pour l'admin
+  type        String                    // "HERO", "FEATURED_COLLECTION", "RICH_TEXT", "TESTIMONIALS", "IMAGE_BANNER", "TRUST_BADGES"
+  position    Int      @default(0)      // Pour l'ordre d'affichage (Drag & Drop)
+  isActive    Boolean  @default(true)   // Activer ou masquer la section
+  
+  // Données de configuration (textes, liens, images, sous-titres) en format JSON flexible
+  content     Json     @default("{}")
+  
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([page, position])
+}
+
+// Modèle pour la médiathèque (téléchargement et réutilisation de photos)
+model MediaAsset {
+  id          String   @id @default(cuid())
+  url         String
+  filename    String
+  altText     String?
+  size        Int?
+  mimeType    String?
+  createdAt   DateTime @default(now())
+}
+

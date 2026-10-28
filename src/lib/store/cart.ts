@@ -16,6 +16,9 @@ export interface CartItem {
 
 interface CartState {
   items: CartItem[];
+  isDrawerOpen: boolean;
+  openDrawer: () => void;
+  closeDrawer: () => void;
   addItem: (item: Omit<CartItem, 'id'>) => void;
   removeItem: (variantId: string) => void;
   updateQuantity: (variantId: string, quantity: number) => void;
@@ -28,6 +31,10 @@ export const useCart = create<CartState>()(
   persist(
     (set, get) => ({
       items: [],
+      isDrawerOpen: false,
+
+      openDrawer: () => set({ isDrawerOpen: true }),
+      closeDrawer: () => set({ isDrawerOpen: false }),
 
       addItem: (item) => {
         set((state) => {
@@ -37,6 +44,7 @@ export const useCart = create<CartState>()(
 
           if (existingItem) {
             return {
+              isDrawerOpen: true,
               items: state.items.map((i) =>
                 i.variantId === item.variantId
                   ? { ...i, quantity: i.quantity + item.quantity }
@@ -46,6 +54,7 @@ export const useCart = create<CartState>()(
           }
 
           return {
+            isDrawerOpen: true,
             items: [
               ...state.items,
               {

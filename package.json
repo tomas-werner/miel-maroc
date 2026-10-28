@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "db:seed": "tsx prisma/seed.ts",
-    "db:seed:admin": "tsx scripts/seed-admin.ts"
+    "db:seed": "tsx --env-file=.env prisma/seed.ts",
+    "db:seed:admin": "tsx --env-file=.env scripts/seed-admin.ts",
+    "seed:admin": "tsx --env-file=.env scripts/seed-admin.ts",
+    "seed:sections": "tsx --env-file=.env scripts/seed-sections.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^6.0.0",

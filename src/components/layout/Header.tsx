@@ -20,6 +20,7 @@ import {
   Check,
 } from 'lucide-react';
 import { useCart } from '@/lib/store/cart';
+import CartDrawer from '@/components/cart/CartDrawer';
 
 interface HeaderProps {
   locale: Locale;
@@ -28,7 +29,7 @@ interface HeaderProps {
 export default function Header({ locale }: HeaderProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const { getTotalItems, getTotalPrice } = useCart();
+  const { getTotalItems, getTotalPrice, openDrawer } = useCart();
   const [searchQuery, setSearchQuery] = useState('');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
@@ -297,10 +298,12 @@ export default function Header({ locale }: HeaderProps) {
               </div>
             </Link>
 
-            {/* Panier d'achat avec total MAD et compteur badge */}
-            <Link
-              href={`/${locale}/panier`}
-              className="flex items-center gap-2 p-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/60 transition group relative"
+            {/* Panier d'achat avec total MAD et compteur badge -> Ouvre le Cart Drawer */}
+            <button
+              type="button"
+              onClick={openDrawer}
+              className="flex items-center gap-2 p-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/60 transition group relative cursor-pointer"
+              aria-label="Ouvrir le panier"
             >
               <div className="relative">
                 <div className="w-9 h-9 rounded-full bg-amber-600 text-white flex items-center justify-center shadow-xs group-hover:scale-105 transition">
@@ -320,7 +323,7 @@ export default function Header({ locale }: HeaderProps) {
                   {totalPrice.toFixed(0)} MAD
                 </span>
               </div>
-            </Link>
+            </button>
           </div>
         </div>
       </div>
@@ -546,6 +549,8 @@ export default function Header({ locale }: HeaderProps) {
           <div className="flex-1" onClick={() => setMobileMenuOpen(false)} />
         </div>
       )}
+      {/* Cart Drawer latéral (Shopify Dawn Style) */}
+      <CartDrawer locale={locale} />
     </header>
   );
 }

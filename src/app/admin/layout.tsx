@@ -47,6 +47,12 @@ export default async function AdminLayout({
                 >
                   Stocks
                 </a>
+                <a
+                  href="/admin/personnalisation"
+                  className="border-transparent text-amber-700 hover:border-amber-500 hover:text-amber-800 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-bold"
+                >
+                  🎨 Personnalisation
+                </a>
               </div>
             </div>
             <div className="flex items-center">

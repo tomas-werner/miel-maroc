@@ -1,5 +1,29 @@
+import fs from 'fs';
+import path from 'path';
 import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcryptjs';
+
+// Auto-load .env if DATABASE_URL is not yet defined in environment
+if (!process.env.DATABASE_URL) {
+  try {
+    const envPath = path.resolve(process.cwd(), '.env');
+    if (fs.existsSync(envPath)) {
+      const envContent = fs.readFileSync(envPath, 'utf-8');
+      for (const line of envContent.split('\n')) {
+        const trimmed = line.trim();
+        if (trimmed && !trimmed.startsWith('#') && trimmed.includes('=')) {
+          const [key, ...values] = trimmed.split('=');
+          const val = values.join('=').replace(/^["']|["']$/g, '').trim();
+          if (!process.env[key.trim()]) {
+            process.env[key.trim()] = val;
+          }
+        }
+      }
+    }
+  } catch (err) {
+    // Ignore and proceed
+  }
+}
 
 const prisma = new PrismaClient();
 
