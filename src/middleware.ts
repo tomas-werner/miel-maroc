@@ -2,10 +2,10 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { locales, defaultLocale } from './lib/utils/translations';
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Check if the path is for admin or moderateur (no locale prefix)
+  // Check if the path is for admin or moderator (no locale prefix)
   if (pathname.startsWith('/admin') || pathname.startsWith('/moderateur')) {
     return NextResponse.next();
   }
@@ -30,4 +30,3 @@ export const config = {
   // Match only internationalized pathnames
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico|admin|moderateur).*)'],
 };
-

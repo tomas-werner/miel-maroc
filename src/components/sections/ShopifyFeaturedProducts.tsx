@@ -35,12 +35,20 @@ export default function ShopifyFeaturedProducts({ data, locale }: ShopifyFeature
   const productsList = Object.values(TERROIR_PRODUCTS).slice(0, limit);
 
   const handleQuickAdd = (product: (typeof productsList)[0]) => {
-    const defaultVariant = product.variants?.[0] || {
-      id: `variant-${product.id}`,
-      sku: `${product.slug}-500g`,
-      price: product.basePrice,
-      weight: '500g',
-    };
+    const firstVariant = product.variants?.[0];
+    const defaultVariant = firstVariant
+      ? {
+          id: firstVariant.id,
+          sku: firstVariant.sku,
+          price: firstVariant.price,
+          format: isRTL ? firstVariant.labelAr : firstVariant.labelFr,
+        }
+      : {
+          id: `variant-${product.id}`,
+          sku: `${product.slug}-500g`,
+          price: product.basePrice,
+          format: '500g',
+        };
 
     addItem({
       variantId: defaultVariant.id,
@@ -51,7 +59,7 @@ export default function ShopifyFeaturedProducts({ data, locale }: ShopifyFeature
       price: defaultVariant.price || product.basePrice,
       quantity: 1,
       image: product.images?.[0]?.url,
-      attributes: { Poids: defaultVariant.weight || '500g' },
+      attributes: { Poids: defaultVariant.format },
     });
 
     setAddedSlug(product.slug);
