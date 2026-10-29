@@ -68,3 +68,4 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Erreur lors de la récupération de la commande' }, { status: 500 });
   }
 }
+
